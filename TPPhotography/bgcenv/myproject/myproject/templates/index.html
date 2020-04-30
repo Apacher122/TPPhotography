@@ -1,0 +1,37 @@
+﻿{% load static %}
+
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>Tipsy Photography</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" >
+
+</head>
+<body>
+    <div class="topnav">
+        <header>
+            <img src="{% static 'img/logoCropped.png' %}" alt="Tipsy Photography logo" class="logo">
+
+            <nav>
+                <a href="#" class="hide-desktop">
+                    <img src="{% static 'img/hamburger-menu-icon.svg' %}" alt="toggle menu" class="menu" id="menu">
+                </a>
+
+                <ul class="show-desktop hide-mobile" id="nav">
+                    <li><a href="/home" class="menu">Home</a></li>
+                    <li><a href="/about" class="menu">About</a></li>
+                    <li><a href="/portfolio" class="menu">Portfolio</a></li>
+                    <li><a href="/contact" class="menu">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    {% block content %}
+    replace me
+    {% endblock %}
+
+</body>
+</html>

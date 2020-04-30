@@ -1,0 +1,30 @@
+﻿{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<div class="photoscape">
+    <img id="bgphoto" src="{% static 'img/IMG_0510.jpg' %}" alt="New York Skyline">
+    <div id="tipsyPhotography">
+        <h1>Tipsy Photography</h1>
+    </div>
+    <a href="https://instagram.com/ApacheMain"><span class="dot"><img class="icon" src="{% static 'img/icons/instagram_icon2.png' %}" alt="instagram icon"></span></a>
+    <a href="#"><span class="dot"><img class="icon" src="{% static 'img/icons/twitter_icon.png' %}" alt="twitter_icon"></span></a>
+    <a href="#"><span class="dot"><img class="icon" src="{% static 'img/icons/pinterest_icon.png' %}" alt="pinterest icon"></span></a>
+    <a href="#"><span class="dot"><img class="icon" src="{% static 'img/icons/facebook_icon.png' %}" alt="facebook icon"></span></a>
+</div>
+
+<div class="gray-container">
+    <figure class="footer">
+        <div class="info">
+            <img id="me" src="{% static 'img/me.jpg' %}" alt="My photo">
+        </div>
+        <div class="info2">
+            <blockquote>
+                Veteran, Student, Photographer<br />
+                My life through a lens.
+            </blockquote>
+        </div>
+    </figure>
+</div>
+
+{% endblock %}
